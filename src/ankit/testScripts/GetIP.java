@@ -21,7 +21,7 @@ public class GetIP
 		Gson gson=new GsonBuilder().create();
 		PojoClass pojoClass;
 		
-		String url=UrlFixed.restURL().getProperty("URL1")+EndpointURL.showMyIP.getRpath();
+		String url=UrlFixed.restURL().getProperty("URL2")+EndpointURL.countryNameXml.getRpath();
 		
 		System.out.println(url);
 		Response response=webservices.get(url);
