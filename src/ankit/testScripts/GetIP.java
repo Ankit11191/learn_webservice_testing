@@ -22,11 +22,9 @@ public class GetIP
 		PojoClass pojoClass;
 		
 		String url=UrlFixed.restURL().getProperty("URL1")+EndpointURL.showMyIP.getRpath();
-		//String url2=UrlFixed.restURL().getProperty("URL2")+EndpointURL.countryNameXml.getRpath();
 		
 		System.out.println(url);
 		Response response=webservices.get(url);
-		//Response response2=webservicesXML.get(url2);
 		
 		if(response.getStatusCode()==200)
 		{
@@ -36,9 +34,6 @@ public class GetIP
 
 			pojoClass = gson.fromJson(reader, PojoClass.class);
 				System.out.println(pojoClass.getIp());
-//				Assert.assertEquals(pojoClass[i].getCountryname(), "Afghanistan");
-//				System.out.println("Pass");
-//
 			}
 		}
 	}
