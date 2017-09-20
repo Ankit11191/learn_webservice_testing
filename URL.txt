@@ -1,0 +1,2 @@
+URL1=http://ip.jsontest.com
+URL2="http://ws.postcoder.com/pcw";
